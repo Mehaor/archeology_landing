@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /* background-color: red; */
+}
+
+body, input, button, a, h1, h2, h3, h4, h5, h6, textarea {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+#base {
+    position: absolute;
+    padding: 30px 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+#base>div {
+    max-width: 1280px;
+    margin: auto;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.primary {
+    color: #558C89;
+}
+
+.secondary {
+    color: #74AFAD;
+}
+
+.accent {
+    color: #D9853B
+}
+
+.light {
+    color: #ECECEA
+}
+
+input[type="submit"].primary, button.primary {
+    background: #74AFAD;
+    color: white;
+}
+
+input[type="submit"].primary:hover, button.primary:hover {
+    background: #558C89;
+    transition: 500ms 0s ease;
+}
+
+@media (max-width: 959px) {
+    #base>div {
+        padding: 30px;
+    }
+
+    
+}

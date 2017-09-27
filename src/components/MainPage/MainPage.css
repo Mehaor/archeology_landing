@@ -1,0 +1,101 @@
+#main {
+    /* position: absolute; */
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+#main h1, #main h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#main h1 {
+    font-size: 40px;
+    font-weight: normal;
+}
+
+#main h2 {
+    font-size: 30px;
+}
+
+.main-block {
+    display: inline-block;
+    width: 50%;
+    padding: 30px;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+.main-block-info {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.main-block form input, .main-block form textarea {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 20px 0;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    font-size: 14px;
+    line-height: 24px;
+    background: #F5F5F5;
+    border: none;
+}
+
+.main-block form input {
+    padding: 0 10px;
+    height: 50px;
+    font-size: 14px;
+}
+
+.main-block form textarea {
+    padding: 10px;
+    height: 150px;
+}
+
+.main-block form input[type="submit"] {
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    height: 50px;
+}
+
+
+@media (max-width: 1023px) {
+    .main-block {
+        display: block;
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+    }
+    .main-block-info {
+        text-align: center;
+    }
+}
+
+@media (max-width: 959px) {
+
+    #main h1 {
+        font-size: 25px;
+    }
+    
+    #main h2 {
+        font-size: 18px;
+    }
+
+    .main-block {
+        padding: 0;
+        margin: 40px auto;
+    }
+
+    .main-block-info {
+        
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
